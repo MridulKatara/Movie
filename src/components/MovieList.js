@@ -1,6 +1,6 @@
 import React from "react";
 import MovieItem from "./MovieItem";
-import './MovieList.css'; // Import the CSS file for MovieList styles
+import './MovieList.css'; 
 
 const MovieList = ({ movies, onMovieSelect }) => {
   const renderedList = movies.map((movie) => {

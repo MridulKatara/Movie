@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
-import './MovieModal.css'; // Import the CSS file for MovieModal styles
+import './MovieModal.css'; 
 
-const API_KEY = process.env.REACT_APP_API_KEY;
+const API_KEY = "2629d552";
 
 const MovieModal = ({ movie, onClose }) => {
   const [details, setDetails] = useState({});
@@ -15,7 +15,6 @@ const MovieModal = ({ movie, onClose }) => {
         `http://www.omdbapi.com/?i=${movie.imdbID}&apikey=${API_KEY}`
       );
       setDetails(response.data);
-      // Fetch trailer URL (you can use another API or a fixed URL for demo purposes)
       const trailerResponse = await axios.get(`https://api.example.com/trailer?movieId=${movie.imdbID}`);
       setTrailerUrl(trailerResponse.data.trailerUrl);
     } catch (error) {

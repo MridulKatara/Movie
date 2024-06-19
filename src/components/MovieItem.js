@@ -1,5 +1,5 @@
 import React from "react";
-import './MovieItem.css'; // Import the CSS file for MovieItem styles
+import './MovieItem.css'; 
 
 const MovieItem = ({ movie, onMovieSelect }) => {
   return (
