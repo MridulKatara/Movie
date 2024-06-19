@@ -1,0 +1,23 @@
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-item {
+    flex: 1 1 22%;
+    margin: 1%;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-item {
+      flex: 1 1 46%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-item {
+      flex: 1 1 100%;
+    }
+  }
+  
