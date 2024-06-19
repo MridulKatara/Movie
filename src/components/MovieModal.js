@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import './MovieModal.css'; // Import the CSS file for MovieModal styles
 
-const API_KEY = "2629d552";
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 const MovieModal = ({ movie, onClose }) => {
   const [details, setDetails] = useState({});
