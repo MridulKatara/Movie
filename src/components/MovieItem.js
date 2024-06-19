@@ -11,3 +11,4 @@ const MovieItem = ({ movie, onMovieSelect }) => {
 };
 
 export default MovieItem;
+  
